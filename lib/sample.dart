@@ -12,7 +12,6 @@ void main(){
 
   int a = 70, b= 50;
   print('sum = ${a+b}');
-
 }
 
 //void => return type
