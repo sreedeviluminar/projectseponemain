@@ -11,10 +11,17 @@ void main(){
   print('Name     : ${student1.name = "Shameema"}');
   print('Age      : ${student1.age  = 21 }');
   print('Phone    : ${student1.phone = 9754323421}');
+  print('Course   : ${Students.course}');
+  print('Institute: ${Students.institute}');
+
   print('***************************');
+  
   Students student2 = Students();
   print('Student 2 details');
   print('Name     : ${student2.name = "Vineesh"}');
   print('Age      : ${student2.age  = 25}');
   print('Phone    : ${student2.phone = 99887644311}');
+  print('Course   : ${Students.course}');
+  print('Institute: ${Students.institute}');
+
 }
