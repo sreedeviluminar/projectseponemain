@@ -15,7 +15,7 @@ void main(){
   print('Institute: ${Students.institute}');
 
   print('***************************');
-  
+
   Students student2 = Students();
   print('Student 2 details');
   print('Name     : ${student2.name = "Vineesh"}');
