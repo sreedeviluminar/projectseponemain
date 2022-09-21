@@ -1,7 +1,6 @@
 void add(int a, int b){ // here a and b are parameters /arguments / formal parameters
   print('sum = ${a+b}');
 }
-
 void showmydetails(String name, int age , String email, String Qualification, int phone){
 
 }

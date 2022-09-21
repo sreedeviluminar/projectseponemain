@@ -11,8 +11,8 @@ void main() {
   name2 = "morning";               // name2 string
   name2 = 200;                    //support
 
-  final dob = '12/10/1999';      //value constant at runtime
- // dob      = '13/2/1998';
+  final  dob = '12/10/1999';      //value constant at runtime
+  //dob      = '13/2/1998';
 
   const year = 2022;            //value constant at compiletime
  // year = 2020;
