@@ -12,10 +12,10 @@ void main(){
 
   print('Assignment operators');
   //Assignment
-  print('x = y   => ${x = y}'); // x = 5
-  print('x += y  => ${x+=y}'); //x = x+y = 5+5 = 10
-  print('x -= y  => ${x-=y}');// x = x-y = 10-5= 5
-  print('x *= y  => ${x*=y}');
+  print('x = y   = ${x = y}'); // x = 5
+  print('x += y  = ${x+=y}'); //x = x+y = 5+5 = 10
+  print('x -= y  = ${x-=y}');// x = x-y = 10-5= 5
+  print('x *= y  = ${x*=y}');
   print('x /= y  = ${x/=y}');
   print('x ~/= y = ${x~/=y}');
   print('x %= y  = ${x%=y}');
