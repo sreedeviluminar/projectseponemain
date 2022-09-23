@@ -65,8 +65,29 @@ void main(){
   print('k << 1 = ${k << 1}');// 0100 << 1   = 100=> 1000 = 8
 
 
+   dynamic data = 20;
+   print(data is String);
 
+   print('ternary operator');
+   ///syntax -> condition ? true statement : false statement ;
+    var age = 20;
+    var result = age >= 18 ? "welcome to vote" : "not eligible to vote";
+    print(result);
+    var mark = 40;
+    var result1 = mark < 40 ? "Sorry , U failed the Test" : "Congratulation";
+    print(result1);
 
+    var un = 'admin';
+    var pw = 123;
 
+    var login = (un == 'admin' && pw == 1234) ? "Login Successful" : 'Login Failure';
+    print(login);
 
+    ///largest of two numbers
+    var largest = (20 > 30) ? 20  : 30;
+    print('$largest is largest');
+
+    int u = 1, v=4, w =2;
+    var largest2 = (u > v) ? (u > w ? u : w) : (v > w ? v : w) ;
+    print(largest2);
 }
