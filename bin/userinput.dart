@@ -5,13 +5,12 @@ void main(){
   print('enter your name');
   // var name = value ;
   String? name = stdin.readLineSync() ;   //reads String
-  print("Hello $name");
   print('enter your age');
   int age = int.parse(stdin.readLineSync()!); // ! -> null check operator
-  print('your age is $age');
   print('enter your cgpa');
   var mark = double.parse(stdin.readLineSync()!);
-  print("cgpa is $mark");
+  stdout.write("my name is $name , am $age yrs old , my cgpa is $mark");
+
 
 
 
