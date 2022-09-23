@@ -8,8 +8,8 @@ void main(){
   int age = int.parse(stdin.readLineSync()!); // ! -> null check operator
   print('enter your cgpa');
   var mark = double.parse(stdin.readLineSync()!);
-  stdout.write("my name is $name , am $age yrs old , my cgpa is $mark");
-
+  stdout.write("my name is $name , am $age yrs old , my cgpa is $mark \n");
+ stdout.writeln('$name $age $mark');
 
 
 
