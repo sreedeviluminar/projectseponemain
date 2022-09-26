@@ -1,15 +1,15 @@
 void main(){
-   var month = 9;
-
+   var month = "sep";
    switch(month){
-     case 1 : print('month is jan');
+     case "jan" : print('month is jan');
      break;
-     case 2 : print('month is feb');
+     case "feb" : print('month is feb');
      break;
-     case 8 : print('month is sep');
+     case 'sep' : print('month is sep');
      break;
-     case 12: print('month is dec');
+     case "april" : print('month is april');
      break;
-     default: print('none of these');
+     default : print('none of these');
+
    }
 }
