@@ -1,23 +1,31 @@
 import 'dart:io';
 void main(){
-  int sum = 0,rem,temp;   // 121
+  int rev = 0,rem,temp;
   print('enter a number');
-  int num = int.parse(stdin.readLineSync()!);
+  int num = int.parse(stdin.readLineSync()!);  //121
   temp = num;           // temp = 121
   while(num > 0){
     rem = num % 10;
-    sum = sum*10+rem;
+    rev = rev*10+rem;
     num = num ~/10;
   }
-  if(sum == temp){
-    print('palidrome number');
+  if(rev == temp){
+    print('palindrome number');
   }else{
-    print('not palidrome');
+    print('not palindrome');
+  }
+
+  String data = 'malayalam';
+  String revs = data.split('').reversed.join();
+  if(data == revs){
+    print('palindrome string');
+  }else{
+    print('not a palindrome string');
   }
 }
-///if number is 121
-///121 > 0  rem = 121 % 10 = 1 sum = 0*10+1 = 1   num =121~/10 = 12
-///12  > 0  rem = 12  % 10 = 2 sum = 1*10+2 = 12  num = 12~/10 = 1
-///1   > 0  rem = 1   % 10 = 1 sum = 12*10+1= 121 num = 1~/10  = 0
-/// 0  > 0 false
-///   121 == 121 true
+//if 121    temp = 121
+/// 121 > 0  true  rem = 121 % 10 = 1 rev =0*10+1 = 1  num = 121~/10 = 12
+/// 12  > 0  true  rem = 12  % 10 = 2 rev =1*10+2 = 12 num = 12~/10  = 1
+/// 1   > 0  true  rem =  1  % 10 = 1 rev =12*10+1= 121 num = 1~/10  = 0
+/// 0   > 0  false exit from while
+/// rev == temp  121 == 121
