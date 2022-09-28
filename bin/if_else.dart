@@ -1,14 +1,21 @@
 import 'dart:io';
 
 void main(){
-  print("enter value of a and b");
-  int a = int.parse(stdin.readLineSync()!);
-  int b = int.parse(stdin.readLineSync()!);
-  ///simple if and if-else
-  if(a > b){
-    print('largest is a');
-    print('hello');
-  } else {
-    print('largest is b');
-  }
+ int age =2;
+ //simple if // if-else
+ if(age >= 18){
+    print('welcome to vote');
+  }else{
+   print('not eligible to vote');
+ }
+
+ print('enter value of a and b');
+ var a = int.parse(stdin.readLineSync()!);
+ var b = int.parse(stdin.readLineSync()!);
+ if(a>b){
+  print('a is larger');
+ }else{
+  print('b is larger');
+ }
+ print('hello');
 }
