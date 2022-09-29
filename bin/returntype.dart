@@ -2,7 +2,7 @@
 void add(){
   int a=10,
       b=20,
-   sum1 = a+b;
+   sum1= a+b;
   print('sum1 =$sum1');
 }
 //function without return type with parameter
@@ -21,6 +21,10 @@ double add3(int a){
   int b = 2;
   return a/b;
 }
+
+String show(){
+  return 'good morning';
+}
 void main(){
  add();
  add1(1, 2);
@@ -29,4 +33,8 @@ void main(){
  //another way
   double result = add3(8);
   print(result);
+  print(show());
+  String data = show();
+  print(data);
+
 }
