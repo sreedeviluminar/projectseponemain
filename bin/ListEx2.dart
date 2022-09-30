@@ -33,5 +33,8 @@ void main(){
   ///7. List.of()
   List list6 = List.of(names);
   print('list6 = $list6');
-
+  print(list6.last);
+  print(list6.contains('Anu'));
+  print(list6.elementAt(3));
+  print(list5.indexOf(300));
 }
