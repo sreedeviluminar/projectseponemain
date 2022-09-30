@@ -13,9 +13,25 @@ void main(){
   List list2 = List.filled(5, 2 ,growable: true);  //5 length    1 value
   list2.add(2);
   list2[1] = 3;
-  list2[3] = 5;
+  list2[3] = 5;  //change value at a particular index
   list2[4] = 7;
   list2.add(10);
   print('index of 7 = ${list2.indexOf(7)}');
-  print(list2);
+  print('list2 = $list2');
+  ///4. List.from()
+  List list3 = List.from([6,8,9,80,90]);
+  list3.add(78);
+  print('list3 = $list3');
+  ///5. List.generate()
+  List list4 = List.generate(6, (index) => index * (5+2));
+  list4.add(45);
+  print('list4 = $list4');
+  ///6. List.unmodifiable();
+  List list5  = List.unmodifiable([100,200,300,300]);
+  //list5.add(50000); not supported since it is unmodifieable
+  print('list5 = $list5');
+  ///7. List.of()
+  List list6 = List.of(names);
+  print('list6 = $list6');
+
 }
