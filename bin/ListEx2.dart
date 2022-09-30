@@ -1,3 +1,4 @@
+
 void main(){
   ///1. list using direct value
                //index    0     1      2      3     4
@@ -27,7 +28,7 @@ void main(){
   list4.add(45);
   print('list4 = $list4');
   ///6. List.unmodifiable();
-  List list5  = List.unmodifiable([100,200,300,300]);
+  List<int> list5  = List.unmodifiable([100,200,300,300]);
   //list5.add(50000); not supported since it is unmodifieable
   print('list5 = $list5');
   ///7. List.of()
@@ -37,4 +38,14 @@ void main(){
   print(list6.contains('Anu'));
   print(list6.elementAt(3));
   print(list5.indexOf(300));
+
+  int sum = 10;
+  for(int index = 0 ; index < list5.length ; index++){
+       sum = sum + list5[index];
+  }
+  print('sum of elements in list5 = $sum');
+
+  for(var value in list5){  //for(variable with similar type of list  in   listname)
+    print(value);
+  }
 }
