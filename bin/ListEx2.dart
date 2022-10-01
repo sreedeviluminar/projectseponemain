@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main(){
   ///1. list using direct value
                //index    0     1      2      3     4
@@ -25,13 +27,13 @@ void main(){
   print('list3 = $list3');
 
   ///5. List.generate()
-  List list4 = List.generate(6, (i) => i * 3);
-  list4.add('value');
+  List list4 = List.generate(10, (index) => index * 3);
+  list4.add(45);
   print('list4 = $list4');
 
   ///6. List.unmodifiable();
-  List<int> list5  = List.unmodifiable([100,200,300,300]);
-  //list5.add(50000); not supported since it is unmodifieable
+  List<int> list5  = List.unmodifiable([1,2,3,60,40,3]); //eg for fixed length list
+  //list5.add(50000); not supported since it is unmodifiable
   print('list5 = $list5');
 
   ///7. List.of()
@@ -42,13 +44,28 @@ void main(){
   print(list6.contains('anu'));
   print(list6.elementAt(3));
   print(list6.indexOf('hello'));
-  print(list5.lastIndexOf(300));
-  print(list5.indexOf(300));
+  print(list5.lastIndexOf(3));
 
-    for(int index = 0 ; index < list4.length ; index++){
-      print(list4[index]);
-    }
-    for(dynamic value  in list4){
+  List<int> mylist = [1,2,3,9,8,7,4,0];
+   //int sum = mylist[0]+mylist[1]+......
+
+ //for in loop
+   for(int value in  mylist){
       print(value);
-    }
+   }
+
+   int sum =0;
+   for(int index = 0 ; index < mylist.length ;index++){
+
+     sum = sum + mylist[index];
+   }
+   print('sum of elements in mylist = $sum');
+
+
+
+
+
+
+///  index = 0  0 < 8  true forloop print mylist[0] = 1  i++=1
+  ///index = 1  1 < 8  true         print mylist[1] = 2....
 }
