@@ -1,9 +1,9 @@
 void main(){
 
-  var numbers = [1,2,3,4,5,6,7,8];
+  List numbers = [1,2,3,4,5,6];
   print(numbers);
 
-  numbers.forEach((element) {
-    print(element);
+  numbers.forEach((a) {
+    print(a);
   });
 }

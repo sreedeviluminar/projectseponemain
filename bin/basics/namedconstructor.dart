@@ -1,19 +1,20 @@
 class Apple{
-  Apple(){
-      print('i love apples');
+  // Apple(){                 //default constructor
+  //   print('i love apple');
+  // }
+  Apple(int a){   //parameterized constructor
+    print('i have $a apple');
   }
-
-  Apple.one(int num){      // classname.constructorname(){   }
-    print('i have $num apples');
-  }
-
-  Apple.two(String name,int num){
-     print('$name has $num apples');
-  }
+/// named constructor  classname.constructorname(){}
+   Apple.one(){
+      print('i have green apple');
+   }
+   Apple.two(String name, int num){
+       print('$name has $num apples');
+   }
 }
 void main(){
-  Apple obj = Apple();
-  var  obj1 = Apple.one(2);
-  var  obj2 = Apple.two('RAINU', 4);
-
+  var obj = Apple(2);
+  var obj1 = Apple.one();
+  var obj2 = Apple.two('Hanna', 6);
 }

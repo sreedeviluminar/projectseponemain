@@ -7,9 +7,12 @@ class Resume{
   void hobbies(var hobbi1,var hobbie2){
     print('my hobbies are $hobbi1, $hobbie2');
   }
+  Resume(String data){
+    print(data);
+  }
 }
 void main(){
-  Resume obj = Resume();
+  Resume obj = Resume('Hai All,');
   print('my name is ${obj.name}');
   print('my email id is ${obj.email}');
   print('my phone number is ${obj.phone}');
