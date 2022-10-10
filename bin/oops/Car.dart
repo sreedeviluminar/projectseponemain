@@ -1,10 +1,11 @@
 class Car{
-   //parametrized function
-  void details(String color, String engine, int seating, String geartype){
-     print('color       : $color');
-     print('enginetype  : $engine ');
-     print("seating cap : $seating");
-     print('Transmission: $geartype');
+
+  void details(String color , double milage, int seating, int model){
+
+    print('color           : $color');
+    print('milage          : $milage');
+    print('Seating cap     : $seating');
+    print('model           : $model');
   }
 }
 
