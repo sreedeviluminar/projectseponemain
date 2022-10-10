@@ -1,9 +1,8 @@
 class Resume{
-  String name = "Hanna";
+  String name  = "Hanna";
   String email = 'hanna@gamil.com';
-  int phone = 9867543210;
-  String job ="Software Trainee";
-
+  int phone    = 9867543210;
+  String job   ="Software Trainee";
   void hobbies(var hobbi1,var hobbie2){
     print('my hobbies are $hobbi1, $hobbie2');
   }
