@@ -1,10 +1,10 @@
 import 'Car.dart';
 
-class Bmw extends Car{
-  String modelname = 'ZX1';
+class BMW extends Car{
+  String model = 'X5';
 }
 void main(){
- Bmw obj = Bmw();
- print('Car model       : ${obj.modelname}');
- obj.details('Black', 18, 6, 2021);
+   BMW obj = BMW();
+   print('Car model   : ${obj.model}');
+   obj.details("Back", 10, 7, 2014);
 }

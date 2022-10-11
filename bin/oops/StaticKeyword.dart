@@ -1,13 +1,14 @@
 class Example{
-  String? name;
-  static String course = 'Flutter';
-  static void show(){
-     print('Doing $course course at Luminar');
-  }
+   String? name;
+   static String course = 'Flutter';
+
+   static void show(){
+     int duration = 4;
+     print('doing a $duration month $course course at Luminar');
+   }
 }
 void main(){
   Example obj = Example();
-  print('my name is ${obj.name ='Deepesh'}');
+  print('My name is ${obj.name ="Arun"}');
   Example.show();
-
 }

@@ -1,10 +1,8 @@
-class Pet {
-
-  String type = "Dog";
+class Pet{
+  String type = 'Dog';
 }
 class Dog extends Pet{
-
-  String breed = "Pug";
+  String breed = 'Pug';
 }
 class Puppy extends Dog{
   int age = 1;
@@ -12,6 +10,5 @@ class Puppy extends Dog{
 
 void main(){
   Puppy obj = Puppy();
-  print('i have a pet which is a ${obj.type}'
-      ' of breed ${obj.breed} \nHe is ${obj.age} yrs old');
+  print('I have a pet which is a ${obj.type} of breed ${obj.breed} \nhe is ${obj.age} yrs old');
 }

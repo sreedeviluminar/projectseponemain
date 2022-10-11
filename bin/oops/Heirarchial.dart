@@ -10,15 +10,15 @@ class Car{
 class Maruti extends Car {
   String model = "Swift Dzire"; // instance variable
 }
-class Hunady extends Car{
+class Hundai extends Car{
   String model = 'i10';
 }
 void main(){
   Maruti obj = Maruti();
   print("My car is ${obj.model}");
   obj.details("Red", 'Petrol', 5, 'Automatic');
-
-  Hunady obj1 = Hunady();
+  print("");
+  Hundai obj1 = Hundai();
   print('His car is ${obj1.model}');
   obj1.details('blue', 'petrol', 5, 'manual');
 }
