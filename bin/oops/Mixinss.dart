@@ -3,9 +3,9 @@ mixin A{
   void show(){
     print('inside show');
   }
- // void disp();
+ // void disp();    // if this function is active u should override it in the child class
 }
-mixin B {
+mixin B{
   int b = 200;
   void view() {
     print('inside view');
