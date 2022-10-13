@@ -1,18 +1,18 @@
 abstract class A{
-   int a = 10;
-   void meth(){
-     print(a);
-   }
-   void show();  //abstract function - it cannot have a body
+  int a = 10;
+  void show(){
+    print('inside show');
+  }
+  void add();
 }
-class B extends A {
+class B extends A{
   @override
-  void show() {
-    print('abstract function from A');
+  void add() {
+    print('sum = ${10+a}');
   }
 }
 void main(){
   B obj = B();
-  obj.meth();
   obj.show();
+  obj.add();
 }

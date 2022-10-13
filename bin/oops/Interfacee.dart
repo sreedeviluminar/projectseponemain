@@ -1,28 +1,26 @@
 class A{
-  int a = 100,  b = 200;
+  int a= 10, b= 20;
   void show(){
-     print('show function');
+    print('inside show');
   }
-  void display(){
-     print('display fucntion');
+  void mathss(int a, int b){
+    print('mul = ${a*b}');
   }
 }
-class B implements A{  // here A became an interface so u must override all the data's from A
-  int a = 200 ;
-  int b = 300;
+class B implements A{  // here A became an interface since we use implements for inheritance
+  int a = 1 , b = 4;
   @override
-  void display() {
-      print('overridden display');
-      //super.display();   //this is not possible since we implements A
-   }
+  void mathss(int a, int b) {
+    print('diff = ${a-b}');
+  }
   @override
   void show() {
-    print('overridden show');
+    print('Hello INterface');
   }
 }
 void main(){
-    B obj = B();
-  print(obj.a + obj.b);
+  B obj = B();
+  obj.mathss(2, 5);
   obj.show();
-  obj.display();
+  print('sum = ${obj.a+obj.b}');
 }

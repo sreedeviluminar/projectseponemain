@@ -1,36 +1,46 @@
 class Father{
-  void fdetails(String name, int age , String job , int phone){}
+  void fdetails(String name , int age ,String job){ }
 }
 class Mother{
-  void mdetails(String name, int age , String job , int phone){ }
+  void mdetails(String name , int age ,String job){ }
 }
-class Child implements Father,Mother{
-  void childdetails(String name, int age, int std){
-    print('**********Child 1 Details************');
-    print('name            : $name');
-    print('age             : $age');
-    print('standard        : $std');
+class Child implements Father, Mother{
+   void childdetails(String name, int age, int std) {
+     print('CHILD DETIALS');
+     print('Name               : $name');
+     print('Age                : $age');
+     print('Standard           : $std');
+   }
+  @override
+  void fdetails(String name, int age, String job) {
+     print('FATHER DETAILS');
+    print('Name               : $name');
+    print('Age                : $age');
+    print('Job                : $job');
   }
   @override
-  void fdetails(String name, int age, String job, int phone) {
-    print('************Father Details************');
-    print('name            : $name');
-    print('age             : $age');
-    print('job             : $job');
-    print('phone           : $phone');
-  }
-  @override
-  void mdetails(String name, int age, String job, int phone) {
-    print('*********Mother Details************');
-    print('name            : $name');
-    print('age             : $age');
-    print('job             : $job');
-    print('phone           : $phone');
+  void mdetails(String name, int age, String job) {
+    print('MOTHER DETAILS');
+    print('Name               : $name');
+    print('Age                : $age');
+    print('Job                : $job');
   }
 }
+// class Child2 extends Father{
+//   void child2details(String name, int age, int std) {
+//     print('CHILD DETIALS');
+//     print('Name               : $name');
+//     print('Age                : $age');
+//     print('Standard           : $std');
+//   }
+// }
 void main(){
   Child obj = Child();
-  obj.childdetails('ARUN', 12, 5);
-  obj.fdetails('Augustin', 40, 'Business', 9876543210);
-  obj.mdetails('Annie', 38, 'House Wife', 908767756564);
+  obj.childdetails('Arun', 12, 6);
+  obj.fdetails('Paul', 40, 'Engineer');
+  obj.mdetails('Anna', 37, 'House Wife');
+
+  // Child2 obj1 = Child2();
+  // obj1.child2details(name, age, std);
+  // obj1.fdetails(name, age, job)
 }

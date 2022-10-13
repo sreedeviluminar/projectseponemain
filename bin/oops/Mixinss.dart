@@ -1,23 +1,25 @@
 mixin A{
+  int a = 10;
   void show(){
-     print('inside show');
+    print('inside show');
   }
-  display();
+ // void disp();
 }
-mixin B{
-  void add(int a, int b){
-    print(a+b);
+mixin B {
+  int b = 200;
+  void view() {
+    print('inside view');
   }
 }
 class C with A,B{
-  @override
-  display() {
-     print('overriden display');
+  void classc(){
+    print('class c function');
   }
 }
 void main(){
   C obj = C();
-  obj.display();
-  obj.add(10, 2);
   obj.show();
+  print(obj.a+obj.b);
+  obj.view();
+  obj.classc();
 }
