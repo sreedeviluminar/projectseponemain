@@ -8,7 +8,7 @@ class Father {
 }
 class Child extends Father{
   cdetails(){
-    fdetails('Business');
+    super.fdetails('Business');
     print('name     = Amal');
     print('age      = 14');
     print('std      = 7');

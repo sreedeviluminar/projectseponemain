@@ -4,6 +4,7 @@ class Task{
    print('b = $b');
    return a;
  }
+ void show(){}
 }
 class B extends Task{
  @override
@@ -11,6 +12,7 @@ class B extends Task{
     int sum = c+d;
     print(sum);
     super.numbers(1,2);
+    show();
     return sum;
   }
 }
