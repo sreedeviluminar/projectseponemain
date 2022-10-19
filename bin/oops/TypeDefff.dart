@@ -14,6 +14,9 @@ show(String n, int a){
   print('my name is $n , i am $a yrs old');
 }
 void main() {
-  mul(3,4,add);
-  mul(5,8,sub);
+ myfunction obj;
+ obj= add;
+ obj(5,5);
+ obj = sub;
+ mul(1, 2, sub);
 }

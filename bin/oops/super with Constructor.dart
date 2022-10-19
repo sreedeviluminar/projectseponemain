@@ -1,10 +1,10 @@
 class Parent {
-  Parent(int b){
-    print('parent class constructor $b');
+  Parent(int a){
+    print('parent class constructor ');
   }
 }
 class Child extends Parent{
-  Child(int a) : super(1000){
+  Child(int a) : super(2){
     print('child class constructor $a');
   }
 }
